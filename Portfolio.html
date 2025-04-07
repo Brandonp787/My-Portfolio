@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brandon Perez Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Futura&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Brandon Perez</h1>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#game-animations">Game Animations</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to My Portfolio</h2>
+    <p>A showcase of my web development and cybersecurity projects.</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="project">
+      <h3>SecureCloud Cybersecurity App</h3>
+      <img src="images/project1.png" alt="Screenshot of Project 1">
+      <p>A full-stack cybersecurity platform built to showcase authentication, cloud security, and alerting systems.</p>
+      <a href="https://github.com/Brandonp787/securecloud" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>PlayStation UI Web Project</h3>
+      <img src="images/playstation-ui.png" alt="PlayStation UI Screenshot" width="100%">
+      <p>Interactive PlayStation-themed UI using jQuery, CSS animations, and tabbed navigation.</p>
+      <a href="https://github.com/yourgithub/playstation-ui" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <section id="game-animations">
+    <h2>16-bit Game Animation Examples</h2>
+    <div class="game-animation">
+      <img src="images/16bit-character.png" alt="16-bit Character" class="character">
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>You can view or download my resume below:</p>
+    <a href="documents/brandon-perez-resume.pdf" target="_blank" class="button">Download Resume (PDF)</a>
+  </section>
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>You can view or download my resume using the link below:</p>
+    <a href="https://1drv.ms/w/c/58dbb57057e5c926/Eee4eEj3lCpIhaoga0PcOjwBN0vU5JSFco7IPqpeOsyOEA" target="_blank" rel="noopener noreferrer" class="resume-button">View Resume (PDF)</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:Brandonp919@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Brandon Perez. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
